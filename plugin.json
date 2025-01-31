@@ -48,7 +48,7 @@
     {
       "name": "model",
       "label": "Model",
-      "description": "Optional, default: \"sonar\", options: \"sonar\", \"sonar-pro\", \"sonar-reasoning\"",
+      "description": "Optional; options: \"sonar\", \"sonar-pro\", \"sonar-reasoning\"; default: \"sonar\"",
       "defaultValue": "sonar"
     },
     {
