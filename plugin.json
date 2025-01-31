@@ -4,6 +4,7 @@
   "emoji": "🔍",
   "title": "Perplexity Sonar Search",
   "iconURL": "https://custom.typingmind.com/assets/models/perplexityai.png",
+  "githubURL": "https://github.com/TaxingAuthority/Perplexity-Sonar-Search",
   "httpAction": {
     "id": "4b3dda94-9f08-46da-b6f6-28b5883ab5b5",
     "url": "https://api.perplexity.ai/chat/completions",
