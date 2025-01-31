@@ -5,7 +5,7 @@
   "title": "Perplexity Sonar Search",
   "iconURL": "https://custom.typingmind.com/assets/models/perplexityai.png",
   "httpAction": {
-    "id": "b156833f-9599-4155-bba9-e713dd21aa01",
+    "id": "4b3dda94-9f08-46da-b6f6-28b5883ab5b5",
     "url": "https://api.perplexity.ai/chat/completions",
     "name": "",
     "method": "POST",
