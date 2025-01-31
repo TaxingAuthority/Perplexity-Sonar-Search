@@ -36,8 +36,6 @@
     "description": "Search for information from the internet using Perplexity."
   },
   "outputType": "respond_to_ai",
-  "sourceUUID": null,
-  "oauthConfig": null,
   "userSettings": [
     {
       "name": "apiKey",
