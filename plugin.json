@@ -1,15 +1,9 @@
 {
   "id": "search_via_perplexity_sonar",
-  "org": null,
   "uuid": "9cc8cbd1-2add-4634-b06e-3bae18763230",
   "emoji": "🔍",
   "title": "Perplexity Sonar Search",
-  "system": false,
   "iconURL": "https://custom.typingmind.com/assets/models/perplexityai.png",
-  "syncedAt": "2025-01-24T14:44:47.529Z",
-  "createdAt": "2025-01-21T23:42:20.125Z",
-  "deletedAt": null,
-  "githubURL": "https://github.com/TypingMind/plugin-perplexity-search",
   "httpAction": {
     "id": "b156833f-9599-4155-bba9-e713dd21aa01",
     "url": "https://api.perplexity.ai/chat/completions",
