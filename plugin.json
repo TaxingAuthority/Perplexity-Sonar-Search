@@ -1,0 +1,71 @@
+{
+  "id": "search_via_perplexity_sonar",
+  "org": null,
+  "uuid": "9cc8cbd1-2add-4634-b06e-3bae18763230",
+  "emoji": "🔍",
+  "title": "Perplexity Sonar Search",
+  "system": false,
+  "iconURL": "https://custom.typingmind.com/assets/models/perplexityai.png",
+  "syncedAt": "2025-01-24T14:44:47.529Z",
+  "createdAt": "2025-01-21T23:42:20.125Z",
+  "deletedAt": null,
+  "githubURL": "https://github.com/TypingMind/plugin-perplexity-search",
+  "httpAction": {
+    "id": "b156833f-9599-4155-bba9-e713dd21aa01",
+    "url": "https://api.perplexity.ai/chat/completions",
+    "name": "",
+    "method": "POST",
+    "hasBody": true,
+    "hasHeaders": true,
+    "requestBody": "{\"model\": \"{model}\",\"messages\": [{\"role\": \"system\",\"content\": \"{systemMessage}\"},{\"role\": \"user\",\"content\": \"{keyword}\"}]}",
+    "requestHeaders": "{\"accept\": \"application/json\",\"authorization\": \"Bearer {apiKey}\"}",
+    "resultTransform": {
+      "engine": "jmes",
+      "expression": "choices[*].message.content | join(' ', @)"
+    },
+    "hasResultTransform": true
+  },
+  "openaiSpec": {
+    "name": "search_via_perplexity_sonar",
+    "parameters": {
+      "type": "object",
+      "required": [
+        "keyword"
+      ],
+      "properties": {
+        "keyword": {
+          "type": "string",
+          "description": "The search keyword"
+        }
+      }
+    },
+    "description": "Search for information from the internet using Perplexity."
+  },
+  "outputType": "respond_to_ai",
+  "sourceUUID": null,
+  "oauthConfig": null,
+  "userSettings": [
+    {
+      "name": "apiKey",
+      "type": "password",
+      "label": "Perplexity API Key",
+      "required": true,
+      "description": "Get your API Key from Perplexity: https://www.perplexity.ai/settings/api"
+    },
+    {
+      "name": "model",
+      "label": "Model",
+      "description": "Optional, default: \"sonar\"",
+      "defaultValue": "sonar"
+    },
+    {
+      "name": "systemMessage",
+      "label": "System Message",
+      "description": "Optional, default: \"Be precise and concise\"",
+      "defaultValue": "Be precise and concise"
+    }
+  ],
+  "overviewMarkdown": "This plugin allows the AI assistant to search for information from the internet using Perplexity Sonar.\n\n**🔑 Perplexity API Key needed**. Click the Settings tab and enter your API Key. Get your Perplexity API Key from [here](https://www.perplexity.ai/settings/api)\n\nExample usage:\n\n> What's the gold price?\n\n> How's the weather at HCMC at the moment?\n",
+  "authenticationType": "AUTH_TYPE_NONE",
+  "implementationType": "javascript"
+}
