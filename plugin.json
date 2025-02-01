@@ -47,9 +47,10 @@
     },
     {
       "name": "model",
-      "label": "Model",
+      "label": "Model", 
       "description": "Optional; options: \"sonar\", \"sonar-pro\", \"sonar-reasoning\"; default: \"sonar\"",
-      "defaultValue": "sonar"
+      "defaultValue": "sonar",
+      "placeholder": "sonar (default)"
     },
     {
       "name": "systemMessage",
